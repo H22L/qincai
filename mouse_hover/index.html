@@ -2,43 +2,43 @@
 <html lang="en">
 
 <head>
-    <title></title>
     <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./jquery-2.2.3.min.js"></script>
     <style>
          :root {
-            --mouse-x: .1;
-            --mouse-y: .1;
-            --mouse: .1;
-            --base: #1497AD;
+            --base: #1497ad;
+            --blur: blur(1px);
             --main-bg-color: brown;
             --main-color: blue;
-            --blur: blur(1px);
+            --mouse: .1;
+            --mouse-x: .1;
+            --mouse-y: .1;
         }
         
         .photo {
-            transform: rotateX(calc(50deg * var(--mouse-x, .1))) rotateY(calc(50deg * var(--mouse-y, .1))) rotateZ(calc(50deg * var(--mouse, .1)));
-            transition: all 0.5s;
             border: 20px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            transition: all .5s;
+            transform: rotateX(calc(50deg * var(--mouse-x, .1))) rotateY(calc(50deg * var(--mouse-y, .1))) rotateZ(calc(50deg * var(--mouse, .1)));
             filter: blur(0px);
         }
         
         body {
-            text-align: center;
-            background: var(--main-bg-color);
-            color: white;
-            font-family: 'helvetica neue', sans-serif;
-            font-weight: 100;
+            font-family: "helvetica neue", sans-serif;
             font-size: 50px;
+            font-weight: 100;
+            text-align: center;
+            color: white;
+            background: var(--main-bg-color);
         }
         
         .display {
             perspective: 800px;
         }
     </style>
-
 </head>
 
 <body>
@@ -53,7 +53,6 @@
                 var y = e.clientY / innerHeight;
                 var z = (e.clientX - e.clientY) / (innerWidth - innerHeight);
 
-
                 root.style.setProperty('--mouse-x', x);
                 root.style.setProperty('--mouse-y', y);
                 root.style.setProperty('--mouse', z);
@@ -62,10 +61,9 @@
         })();
     </script>
     <script>
-        $(".photo").click(function() {
-            $("body").css("background", "var(--main-color)");
-            // $(".photo").css("filter", "blur(4px)");
-        })
+        $('.photo').click(function() {
+            $('body').css('background', 'var(--main-color)');
+        });
     </script>
 </body>
 
