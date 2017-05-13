@@ -43,28 +43,8 @@
 
 <body>
     <div class="display">
-        <img class="photo" src="../images/O4YZCJ[0HD6LGST)TCSI[6N.jpg">
+		23333333
     </div>
-    <script>
-        (function changeVar() {
-            var root = document.documentElement;
-            document.addEventListener('mousemove', function(e) {
-                var x = e.clientX / innerWidth;
-                var y = e.clientY / innerHeight;
-                var z = (e.clientX - e.clientY) / (innerWidth - innerHeight);
-
-                root.style.setProperty('--mouse-x', x);
-                root.style.setProperty('--mouse-y', y);
-                root.style.setProperty('--mouse', z);
-
-            });
-        })();
-    </script>
-    <script>
-        $('.photo').click(function() {
-            $('body').css('background', 'var(--main-color)');
-        });
-    </script>
 </body>
 
 </html>
