@@ -71,13 +71,15 @@
         }
         .new .newWord{
             margin-top: 48px;
-            width: 100%
+            width: 100%;
+            position: relative
         }
         .newWord .left{
             width: 562px;
             height: 376px;
             background-color: #f0eced;
             margin-top: 33px;
+            display: inline-block;
             position: relative;
         }
         .left .data{
@@ -99,9 +101,16 @@
             margin-top: 27px
         }
         .newWord .right{
-            width: 560px;
-            margin-left: 78px;
-            padding-right: 40px
+            width: 556px;
+            position: absolute;
+            top:60px;
+            margin-left: 50px;
+            padding-right: 15px;
+            display: inline-block;
+        }
+        .product{
+            width: 100%;
+            margin-top: 130px
         }
     </style>
 </head>
@@ -146,7 +155,7 @@
         <div class="new">
             <img class="img-responsive center-block" src="https://h22l.github.io/qincai/images/news.jpg" alt="">
             <div class="newWord">
-                <img src="https://h22l.github.io/qincai/images/Lastest.jpg" alt="laster">
+                <img style="display:block" src="https://h22l.github.io/qincai/images/Lastest.jpg" alt="laster">
                 <div class="left">
                     <img style="position: absolute;top: 70px;" src="https://h22l.github.io/qincai/images/avatar.png" alt="avatar">
                     <img style="position:absolute;top:43px;left:148px" src="https://h22l.github.io/qincai/images/quotes.jpg" alt="quotes">
@@ -161,22 +170,56 @@
                             下的中国经济正向新的方向发展，“互联网+”、智能制造等行业或将成为下一个风口上的“猪”。
                         </div>
                     </div>
-                    <div style="position:absolute;right:0;bottom:0;width:146px;height:39px;background-color:#d72340;color:#fff">
-                        <span style="line-height:39px;margin-left:10px">Learn more+</span>
-                        <img src="https://h22l.github.io/qincai/images/arrow.png" alt="">
+                    <div style="position:absolute;right:0;bottom:0;width:146px;height:37px;background-color:#d72340;color:#fff">
+                        <span style="line-height:37px;margin-left:10px">Learn more+</span>
+                        <img class="pull-right" src="https://h22l.github.io/qincai/images/arrow.png" alt="">
                     </div>
                 </div>
                 <div class="right">
-                    <div style="">2015/11/19</div>
-                    <div style="margin-top:25px"></div>
-                    <div></div>
+                    <div style="text-align:right">2015/11/19</div>
+                    <div style="margin-top:25px;position:relative">
+                        <img style="display:inline-block;position:absolute;top:0" src="./images/new1.jpg" alt="">
+                        <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
+                            <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
+                            <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                        </div>
+                    </div>
+                    <div style="text-align:right;margin-top:150px">2015/11/19</div>
+                    <div>
+                        <img style="display:inline-block;position:absolute;top:200px" src="./images/new2.jpg" alt="">
+                        <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
+                            <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
+                            <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="position:absolute;bottom:0;right:0;height:3px;width:150px">
+                    <div style="width:48px;height:5px;background-color:#000;float:right"></div>
+                    <div style="width:48px;height:5px;background-color:#d72340;float:right;margin-right:5px"></div>
                 </div>
             </div>
         </div>
 
         <!-- 产品 -->
-        <div>
-
+        <div class="product">
+            <img class="img-responsive center-block" src="https://h22l.github.io/qincai/images/Products.jpg" alt="">
+            <div style="margin-top:65px">
+                <div>
+                    <div style="width:272px;height:402px;margin-right:36px">
+                        <img src="https://h22l.github.io/qincai/images/pro1.png" alt="">
+                    </div>
+                    <div style="width:272px;height:402px;margin-right:36px">
+                        <img src="https://h22l.github.io/qincai/images/pro2.png" alt="">
+                    </div>
+                    <div style="width:272px;height:402px;margin-right:36px">
+                        <img src="https://h22l.github.io/qincai/images/pro3.png" alt="">
+                    </div>
+                    <div style="width:272px;height:402px;margin-right:36px">
+                        <img src="https://h22l.github.io/qincai/images/pro4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div style="width:125px;height:50px;line-height:50px;margin:0 auto;margin-top:52px;text-align:center;background-color:#c72240;color:#fff;font-size:18px">更多产品 > ></div>
         </div>
 
         <!-- 底部关于我们 -->
