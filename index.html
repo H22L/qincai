@@ -228,7 +228,11 @@
     </div>
 
     <script type="text/javascript">
-        
+    $(".menu li:not(:first)").hover(function () {
+        $(this).addClass('menu_active')
+    }, function () {
+        $(this).removeClass('menu_active')
+    });
     </script>
 </body>
 
