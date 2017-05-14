@@ -177,26 +177,46 @@
                     </div>
                 </div>
                 <div class="right">
-                    <div style="text-align:right">2015/11/19</div>
-                    <div style="margin-top:25px;position:relative">
-                        <img style="display:inline-block;position:absolute;top:0" src="./images/new1.jpg" alt="">
-                        <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
-                            <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
-                            <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                    <div class="one">
+                        <div style="text-align:right">2015/11/19</div>
+                        <div style="margin-top:25px;position:relative">
+                            <img style="display:inline-block;position:absolute;top:0" src="./images/new1.jpg" alt="">
+                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
+                                <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
+                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                            </div>
+                        </div>
+                        <div style="text-align:right;margin-top:150px">2015/11/19</div>
+                        <div>
+                            <img style="display:inline-block;position:absolute;top:200px" src="./images/new2.jpg" alt="">
+                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
+                                <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
+                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                            </div>
                         </div>
                     </div>
-                    <div style="text-align:right;margin-top:150px">2015/11/19</div>
-                    <div>
-                        <img style="display:inline-block;position:absolute;top:200px" src="./images/new2.jpg" alt="">
-                        <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
-                            <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
-                            <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                    <div class="two" style="display:none">
+                        <div style="text-align:right">2015/11/19</div>
+                        <div style="margin-top:25px;position:relative">
+                            <img style="display:inline-block;position:absolute;top:0" src="./images/new2.jpg" alt="">
+                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
+                                <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
+                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                            </div>
+                        </div>
+                        <div style="text-align:right;margin-top:150px">2015/11/19</div>
+                        <div>
+                            <img style="display:inline-block;position:absolute;top:200px" src="./images/new1.jpg" alt="">
+                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
+                                <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
+                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div style="position:absolute;bottom:0;right:0;height:3px;width:150px">
-                    <div style="width:48px;height:5px;background-color:#000;float:right"></div>
-                    <div style="width:48px;height:5px;background-color:#d72340;float:right;margin-right:5px"></div>
+                    <div class="black" style="width:48px;height:5px;background-color:#000;float:right"></div>
+                    <div class="red" style="width:48px;height:5px;background-color:#d72340;float:right;margin-right:5px"></div>
                 </div>
             </div>
         </div>
@@ -249,6 +269,20 @@
         $(this).addClass('menu_active')
     }, function () {
         $(this).removeClass('menu_active')
+    });
+
+    //新闻中心
+    $(".red").hover(function() {
+        $(".one").css('display', 'block');
+        $(".two").css('display', 'none');
+        $(this).css('background-color', '#d72340');
+        $(".black").css('background-color', '#000');
+    });
+    $(".black").hover(function() {
+        $(".two").css('display', 'block');
+        $(".one").css('display', 'none');
+        $(this).css('background-color', '#d72340');
+        $(".red").css('background-color', '#000');
     });
 
     //产品展示效果
