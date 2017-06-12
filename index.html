@@ -10,25 +10,29 @@
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style media="screen">
-        html{
+        html {
             width: 100%;
             min-width: 1200px
         }
-        .main{
+        
+        .main {
             width: 1200px;
             margin: 0 auto;
         }
         /* 头部 */
-        .head{
+        
+        .head {
             height: 90px;
             position: relative;
         }
-        .head img{
+        
+        .head img {
             position: absolute;
             left: 0;
             height: 100%;
             display: inline-block;
         }
+        
         .head .menu {
             height: 90px;
             line-height: 90px;
@@ -37,22 +41,26 @@
             display: inline-block;
             padding: 0
         }
-        .menu li{
+        
+        .menu li {
             list-style: none;
-            float:left;
+            float: left;
         }
-        .menu_active{
+        
+        .menu_active {
             text-align: center;
             background-color: #d72340;
             color: #fff
         }
         /*轮播-替换bootstrap样式*/
-        .carousel-indicators .active{
+        
+        .carousel-indicators .active {
             width: 20px;
             height: 20px;
             margin: 0;
             background-color: #fff;
         }
+        
         .carousel-indicators li {
             display: inline-block;
             width: 20px;
@@ -60,22 +68,25 @@
             margin: 1px;
             text-indent: -999px;
             cursor: pointer;
-            background-color: #000\9;
-            background-color: rgba(0,0,0,0);
+            background-color: #000;
+            background-color: rgba(0, 0, 0, 0);
             border: 1px solid #fff;
             border-radius: 10px;
         }
         /* 新闻中心 */
-        .new{
+        
+        .new {
             width: 100%;
             margin-top: 105px
         }
-        .new .newWord{
+        
+        .new .newWord {
             margin-top: 48px;
             width: 100%;
             position: relative
         }
-        .newWord .left{
+        
+        .newWord .left {
             width: 562px;
             height: 376px;
             background-color: #f0eced;
@@ -83,33 +94,39 @@
             display: inline-block;
             position: relative;
         }
-        .left .data{
+        
+        .left .data {
             position: absolute;
-            top:40px;
+            top: 40px;
             right: 30px
         }
-        .left .article{
+        
+        .left .article {
             width: 380px;
             position: absolute;
-            top:95px;
+            top: 95px;
             left: 150px;
         }
-        .article h4{
+        
+        .article h4 {
             font-weight: bold;
             line-height: 28px
         }
-        .article div{
+        
+        .article div {
             margin-top: 27px
         }
-        .newWord .right{
+        
+        .newWord .right {
             width: 556px;
             position: absolute;
-            top:60px;
+            top: 60px;
             margin-left: 50px;
             padding-right: 15px;
             display: inline-block;
         }
-        .product{
+        
+        .product {
             width: 100%;
             margin-top: 130px
         }
@@ -119,15 +136,18 @@
 <body>
     <div class="main">
         <!-- logo——导航 -->
-		<div class="head">
+        <div class="head">
             <img src="https://h22l.github.io/qincai/images/logo.png" alt="晴彩logo">
             <ul class="menu">
-		        <li class="menu_active" style="width:83px;text-align:center">首页</li>
-		        <li style="width:100px;text-align:center">关于我们</li>
-		        <li style="width:100px;text-align:center">新闻中心</li>
-		        <li style="width:100px;text-align:center">产品展示</li>
-		    </ul>
-		</div>
+                <li class="menu_active" style="width:83px;text-align:center">首页</li>
+                <li style="width:100px;text-align:center">关于我们</li>
+                <li style="width:100px;text-align:center">产品中心</li>
+                <li style="width:100px;text-align:center">新闻中心</li>
+                <li style="width:100px;text-align:center">视频中心</li>
+                <li style="width:100px;text-align:center">下载中心</li>
+                <li style="width:100px;text-align:center">英文版/English</li>
+            </ul>
+        </div>
 
         <!-- 轮播 -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -148,75 +168,6 @@
                 </div>
                 <div class="item">
                     <img src="https://h22l.github.io/qincai/images/carousel3.jpg" alt="...">
-                </div>
-            </div>
-        </div>
-
-        <!-- 新闻中心 -->
-        <div class="new">
-            <img class="img-responsive center-block" src="https://h22l.github.io/qincai/images/news.jpg" alt="">
-            <div class="newWord">
-                <img style="display:block" src="https://h22l.github.io/qincai/images/Lastest.jpg" alt="laster">
-                <div class="left">
-                    <img style="position: absolute;top: 70px;" src="https://h22l.github.io/qincai/images/avatar.png" alt="avatar">
-                    <img style="position:absolute;top:43px;left:148px" src="https://h22l.github.io/qincai/images/quotes.jpg" alt="quotes">
-                    <div class="data">
-                        2015/11/19
-                    </div>
-                    <div class="article">
-                        <h4>投中2015中国投资年会·北京” 11月26-27日将隆重举行</h4>
-                        <div>
-                            2015年中国经济进入改革关键年，经济进入新常态，产业结构进一步优化调整，这预示着新的变化、新的趋势、新的机遇。一方面，
-                            年初国务院出台了各项政策推动“大众创业、万众创新”，孵化器、众创空间的快速发展使得投资逐渐偏向早期化；另一方面，新常态
-                            下的中国经济正向新的方向发展，“互联网+”、智能制造等行业或将成为下一个风口上的“猪”。
-                        </div>
-                    </div>
-                    <div style="position:absolute;right:0;bottom:0;width:146px;height:37px;background-color:#d72340;color:#fff">
-                        <span style="line-height:37px;margin-left:10px">Learn more+</span>
-                        <img class="pull-right" src="https://h22l.github.io/qincai/images/arrow.png" alt="">
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="one">
-                        <div style="text-align:right">2015/11/19</div>
-                        <div style="margin-top:25px;position:relative">
-                            <img style="display:inline-block;position:absolute;top:0" src="./images/new1.jpg" alt="">
-                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
-                                <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
-                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
-                            </div>
-                        </div>
-                        <div style="text-align:right;margin-top:150px">2015/11/19</div>
-                        <div>
-                            <img style="display:inline-block;position:absolute;top:200px" src="./images/new2.jpg" alt="">
-                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
-                                <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
-                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="two" style="display:none">
-                        <div style="text-align:right">2015/11/19</div>
-                        <div style="margin-top:25px;position:relative">
-                            <img style="display:inline-block;position:absolute;top:0" src="./images/new2.jpg" alt="">
-                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:50px">
-                                <h4 style="color:#de2938;font-weight:bold">BAT投资版图：超200桩密集投资 完全霸占互..</h4>
-                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
-                            </div>
-                        </div>
-                        <div style="text-align:right;margin-top:150px">2015/11/19</div>
-                        <div>
-                            <img style="display:inline-block;position:absolute;top:200px" src="./images/new1.jpg" alt="">
-                            <div style="display:inline-block;width:342px;word-wrap:break-word;position:absolute;right:60px;top:200px">
-                                <h4 style="color:#de2938;font-weight:bold">长青腾创业营100天：40位CEO融了40亿 总结..</h4>
-                                <span >中国最大的三家互联网公司百度、阿里巴巴和腾讯（简称BAT）如何通过对外投资，控制了整个中国互联网江湖？《商业周刊/中文版》根据公开消息...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="position:absolute;bottom:0;right:0;height:3px;width:150px">
-                    <div class="black" style="width:48px;height:5px;background-color:#000;float:right"></div>
-                    <div class="red" style="width:48px;height:5px;background-color:#d72340;float:right;margin-right:5px"></div>
                 </div>
             </div>
         </div>
@@ -247,16 +198,9 @@
                             <button style="margin-left:80px;background-color:#d32540;color:#fff;border:1px solid #fff;padding:5px 10px 5px 10px">MORE+</button>
                         </div>
                     </div>
-                    <div style="width:273px;height:402px;display:inline-block;position:relative">
-                        <img src="https://h22l.github.io/qincai/images/pro4.png" alt="">
-                        <div style="width:100%;background-color:#d32540;color:#fff;display:none;padding:30px 20px 10px 20px;position:absolute;top:132px;z-index:20;opacity:0.8">
-                            西尔斯大厦，又译为韦莱集团大厦，是位于美国伊利诺州芝加哥的一幢摩天大楼。<br>
-                            <button style="margin-left:80px;background-color:#d32540;color:#fff;border:1px solid #fff;padding:5px 10px 5px 10px">MORE+</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div style="width:125px;height:50px;line-height:50px;margin:0 auto;margin-top:52px;text-align:center;background-color:#c72240;color:#fff;font-size:18px">更多产品 > ></div>
+            <div style="width:125px;height:50px;line-height:50px;margin:0 auto;margin-top:52px;text-align:center;background-color:#c72240;color:#fff;font-size:18px">查看更多型号</div>
         </div>
 
         <!-- 底部关于我们 -->
@@ -264,33 +208,41 @@
     </div>
 
     <script type="text/javascript">
-    //导航栏效果
-    $(".menu li:not(:first)").hover(function () {
-        $(this).addClass('menu_active')
-    }, function () {
-        $(this).removeClass('menu_active')
-    });
+        //导航栏效果
+        $(".menu li:not(:first)").hover(function() {
+            $(this).addClass('menu_active')
+        }, function() {
+            $(this).removeClass('menu_active')
+        });
 
-    //新闻中心
-    $(".red").hover(function() {
-        $(".one").css('display', 'block');
-        $(".two").css('display', 'none');
-        $(this).css('background-color', '#d72340');
-        $(".black").css('background-color', '#000');
-    });
-    $(".black").hover(function() {
-        $(".two").css('display', 'block');
-        $(".one").css('display', 'none');
-        $(this).css('background-color', '#d72340');
-        $(".red").css('background-color', '#000');
-    });
+        //新闻中心
+        $(".red").hover(function() {
+            $(".one").css('display', 'block');
+            $(".two").css('display', 'none');
+            $(this).css('background-color', '#d72340');
+            $(".black").css('background-color', '#000');
+        });
+        $(".black").hover(function() {
+            $(".two").css('display', 'block');
+            $(".one").css('display', 'none');
+            $(this).css('background-color', '#d72340');
+            $(".red").css('background-color', '#000');
+        });
 
-    //产品展示效果
-    $(".pro_img>div").hover(function () {
-        $(this).children("div").css('display', 'block');
-    }, function () {
-        $(this).children("div").css('display', 'none');
-    });
+        //产品展示效果
+        $(".pro_img>div").hover(function() {
+            $(this).children("div").css('display', 'block');
+        }, function() {
+            $(this).children("div").css('display', 'none');
+        });
+
+        $.ajax({
+            type: "post",
+            url: "./data/img_path.json",
+            success: function(res) {
+                console.log(res.rotation);
+            }
+        });
     </script>
 </body>
 
