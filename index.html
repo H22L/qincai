@@ -239,8 +239,9 @@
         $.ajax({
             type: "post",
             url: "./data/img_path.json",
+            dataType: "json",
             success: function(res) {
-                console.log(res.rotation);
+                console.log(res[0].qwe);
             }
         });
     </script>
