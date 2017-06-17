@@ -93,3 +93,15 @@ html {
     z-index: 20;
     opacity: 0.8
 }
+
+.more {
+    width: 220px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    margin-top: 52px;
+    text-align: center;
+    background-color: #c72240;
+    color: #fff;
+    font-size: 24px;
+}
