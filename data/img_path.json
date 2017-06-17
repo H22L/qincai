@@ -2,8 +2,8 @@
     "asd": 123456,
     "qwe": "asd"
 }, { //户内户外写真机系列
-    "asd": 123456,
-    "qwe": "asd"
+    "name": "户内户外写真机系列",
+    "path": ["./assets/images/products/outdoor/JC-1700S.jpg", "./assets/images/products/outdoor/JC-2000SD.jpg", "./assets/images/products/outdoor/JC-3200D.jpg"]
 }, { //爱普生UV卷材系列
     "asd": 123456,
     "qwe": "asd"
