@@ -26,7 +26,7 @@
                 <li style="width:100px;text-align:center">新闻中心</li>
                 <li style="width:100px;text-align:center">视频中心</li>
                 <li style="width:100px;text-align:center">下载中心</li>
-                <li style="width:150px;text-align:center;color:#d72340;font-weight: bold;">英文版/English</li>
+                <li class="english" style="width:150px;text-align:center;color:#d72340;font-weight: bold;">中文/English</li>
             </ul>
         </div>
 
@@ -191,7 +191,7 @@
 
     <script type="text/javascript">
         //导航栏效果
-        $(".menu li:not(:first)").hover(function() {
+        $(".menu li:not(:first,:last)").hover(function() {
             $(this).addClass('menu_active')
         }, function() {
             $(this).removeClass('menu_active')
@@ -204,6 +204,14 @@
             $(this).children("div").css('display', 'block');
         }, function() {
             $(this).children("div").css('display', 'none');
+        });
+
+        //切换语言
+        $(".menu").on("click", ".english", function() {
+
+        });
+        $(".menu").on("click", ".chinese", function() {
+
         });
     </script>
 </body>
