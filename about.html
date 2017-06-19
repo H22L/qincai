@@ -228,9 +228,35 @@
             $("#advantage div:eq(11)").text("Contact infor");
             $("#advantage div:eq(12)").text("Eyecolor International Digital Technology Co.,Ltd");
             $("#advantage div:eq(13)").text("Add:No 4 Building Junli Industrial Zone,Xincheng Avenue ,Wanjiang District,Dongguang ,Guangdong ");
-        });
-        $(".menu").on("click", ".chinese", function() {
 
+            $(this).attr("id", "chinese");
+            $(this).removeClass("english");
+        });
+        $(".menu").on("click", "#chinese", function() {
+            $("#company>div:eq(0) span").text("东莞市睛彩数码科技有限公司成立于2012年，是一家拥有自主知识产权，专业研发、生产销售数码喷印设备的高科技企业。追求卓越，执着于对品质的追求，一丝不苟的流水线生产，精心严密的细节打造，是亿方数码产品的数量和质量的金字保证。");
+            $("#company>div:eq(1) span").text("我们的核心团队有着十五年的国内外同类产品的销售、生产经验。深知用户及经销商的需求，用稳定、高品质的产品，贴心的服务，为客户创造更多的价值。我们的产品销往世界各地，睛彩合作伙伴遍及全国二十多个省份和直辖市及缅甸、泰国、新加坡、越南、菲律宾、印度等多个国家和地区。");
+            $("#company>div:eq(2) span:eq(1)").text("质量为先，信誉为重，管理为本，服务为诚。");
+            $("#company>div:eq(2) span:eq(0)").text("理念：");
+
+            $(".footer .foo>div:eq(0)").text("生产地址：广东省东莞市万江区新城大道骏利工业园4栋");
+            $(".footer .foo>div:eq(1)").text("联系电话：0769-28686676");
+            $(".footer .foo>div:eq(1)").css("margin-top", "");
+
+            $("#advantage div:eq(0)").text("设备，耗材，墨水，一站式服务，在合作中共赢");
+            $("#advantage div:eq(1)").text("喷头/配件/墨水/打印材料");
+            $("#advantage div:eq(4)").text("睛彩原厂配件");
+            $("#advantage div:eq(5)").text("板卡，电气部件，机械部件，RIP软件等");
+            $("#advantage div:eq(6)").text("睛彩原厂墨水");
+            $("#advantage div:eq(7)").text("水性、弱溶剂、溶剂、UV墨水、热升华、活性、系列产品");
+            $("#advantage div:eq(8)").text("因为专业，所以我们与众不同");
+            $("#advantage div:eq(9)").text("技术培训+售后服务");
+            $("#advantage div:eq(10)").text("睛彩为您提供远程在线技术支持，工厂提供培训，辅助现场装机，原厂色彩管理等一系列的专业技术服务，免除您购机的后顾之虑");
+            $("#advantage div:eq(11)").text("联系我们");
+            $("#advantage div:eq(12)").text("睛彩国际数码科技有限公司");
+            $("#advantage div:eq(13)").text("生产地址：广东省东莞市万江区新城大道骏利工业园4栋");
+
+            $(this).addClass("english");
+            $(this).attr("id", "");
         });
     </script>
 </body>
