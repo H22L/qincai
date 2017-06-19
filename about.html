@@ -207,6 +207,20 @@
 
         //切换语言
         $(".menu").on("click", ".english", function() {
+            $(".head li:eq(0)").text("Home");
+            $(".head li:eq(1)").text("About Eyecolor");
+            $(".head li:eq(2)").text("Products Catalog");
+            $(".head li:eq(3)").text("News");
+            $(".head li:eq(4)").text("Installation video");
+            $(".head li:eq(5)").text("Software Download");
+            $(".head li:not(:last)").css("width", "180px");
+            $(this).parent().parent().removeClass("head container");
+            $(this).parent().parent().addClass("head container-fluid");
+
+            $(".company").text("company profile");
+            $(".culture").text("enterprise culture ");
+            $(".advantage").text("advantage of service");
+
             $("#company>div:eq(0) span").text("Founded in 2012 ,Eyecolor Digital is a high-tech enterprise ,with independent intellectual property right s,professional research and development ,production and marketing the digital printing equipment.Pursuit of outstanding product,insist on good quality,being strict on production line ,concentrate on detail,all these factors advance to the assurance of the quality and quantity .");
             $("#company>div:eq(1) span").text("Our core team has the rich experience for manufacturing and sales printing machinery for more than 15 years ,we well know customers and distributors request and will create more value for customers with stable &high quality products,with sincere service .our machine sells to many places in global world,our cooperative partners distribute in more than twenty different provinces in China ,and we have overseas distributors from different countries in the world,Myanma,Thailand ,Singapore ,Vietnam,Philinpin,India we warmly welcome .");
             $("#company>div:eq(2) span:eq(1)").text("Quality First,Credibility Focused,Management Oriented,Sincere service.");
@@ -233,6 +247,20 @@
             $(this).removeClass("english");
         });
         $(".menu").on("click", "#chinese", function() {
+            $(".head li:eq(0)").text("首页");
+            $(".head li:eq(1)").text("关于我们");
+            $(".head li:eq(2)").text("产品中心");
+            $(".head li:eq(3)").text("新闻中心");
+            $(".head li:eq(4)").text("视频中心");
+            $(".head li:eq(5)").text("下载中心");
+            $(".head li:not(:last)").css("width", "98px");
+            $(this).parent().parent().removeClass("head container-fluid");
+            $(this).parent().parent().addClass("head container");
+
+            $(".company").text("公司简介");
+            $(".culture").text("企业文化");
+            $(".advantage").text("服务优势");
+
             $("#company>div:eq(0) span").text("东莞市睛彩数码科技有限公司成立于2012年，是一家拥有自主知识产权，专业研发、生产销售数码喷印设备的高科技企业。追求卓越，执着于对品质的追求，一丝不苟的流水线生产，精心严密的细节打造，是亿方数码产品的数量和质量的金字保证。");
             $("#company>div:eq(1) span").text("我们的核心团队有着十五年的国内外同类产品的销售、生产经验。深知用户及经销商的需求，用稳定、高品质的产品，贴心的服务，为客户创造更多的价值。我们的产品销往世界各地，睛彩合作伙伴遍及全国二十多个省份和直辖市及缅甸、泰国、新加坡、越南、菲律宾、印度等多个国家和地区。");
             $("#company>div:eq(2) span:eq(1)").text("质量为先，信誉为重，管理为本，服务为诚。");
