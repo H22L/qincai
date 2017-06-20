@@ -207,42 +207,42 @@
         });
 
         //切换语言
-        $(".menu").on("click", ".english", function() {
-            $(".head li:eq(0)").text("Home");
-            $(".head li:eq(1)").text("About Eyecolor");
-            $(".head li:eq(2)").text("Products Catalog");
-            $(".head li:eq(3)").text("News");
-            $(".head li:eq(4)").text("Installation video");
-            $(".head li:eq(5)").text("Software Download");
-            $(".head li:not(:last)").css("width", "180px");
-            $(this).parent().parent().removeClass("head container");
-            $(this).parent().parent().addClass("head container-fluid");
+        // $(".menu").on("click", ".english", function() {
+        //     $(".head li:eq(0)").text("Home");
+        //     $(".head li:eq(1)").text("About Eyecolor");
+        //     $(".head li:eq(2)").text("Products Catalog");
+        //     $(".head li:eq(3)").text("News");
+        //     $(".head li:eq(4)").text("Installation video");
+        //     $(".head li:eq(5)").text("Software Download");
+        //     $(".head li:not(:last)").css("width", "180px");
+        //     $(this).parent().parent().removeClass("head container");
+        //     $(this).parent().parent().addClass("head container-fluid");
 
-            $(".footer .foo>div:eq(0)").text("Add:No 4 Building Junli Industrial Zone,Xincheng Avenue ,Wanjiang District,Dongguang ,Guangdong ");
-            $(".footer .foo>div:eq(1)").text("Tel:0769-28686676");
-            $(".footer .foo>div:eq(1)").css("margin-top", "40px");
+        //     $(".footer .foo>div:eq(0)").text("Add:No 4 Building Junli Industrial Zone,Xincheng Avenue ,Wanjiang District,Dongguang ,Guangdong ");
+        //     $(".footer .foo>div:eq(1)").text("Tel:0769-28686676");
+        //     $(".footer .foo>div:eq(1)").css("margin-top", "40px");
 
-            $(this).attr("id", "chinese");
-            $(this).removeClass("english");
-        });
-        $(".menu").on("click", "#chinese", function() {
-            $(".head li:eq(0)").text("首页");
-            $(".head li:eq(1)").text("关于我们");
-            $(".head li:eq(2)").text("产品中心");
-            $(".head li:eq(3)").text("新闻中心");
-            $(".head li:eq(4)").text("视频中心");
-            $(".head li:eq(5)").text("下载中心");
-            $(".head li:not(:last)").css("width", "98px");
-            $(this).parent().parent().removeClass("head container-fluid");
-            $(this).parent().parent().addClass("head container");
+        //     $(this).attr("id", "chinese");
+        //     $(this).removeClass("english");
+        // });
+        // $(".menu").on("click", "#chinese", function() {
+        //     $(".head li:eq(0)").text("首页");
+        //     $(".head li:eq(1)").text("关于我们");
+        //     $(".head li:eq(2)").text("产品中心");
+        //     $(".head li:eq(3)").text("新闻中心");
+        //     $(".head li:eq(4)").text("视频中心");
+        //     $(".head li:eq(5)").text("下载中心");
+        //     $(".head li:not(:last)").css("width", "98px");
+        //     $(this).parent().parent().removeClass("head container-fluid");
+        //     $(this).parent().parent().addClass("head container");
 
-            $(".footer .foo>div:eq(0)").text("生产地址：广东省东莞市万江区新城大道骏利工业园4栋");
-            $(".footer .foo>div:eq(1)").text("联系电话：0769-28686676");
-            $(".footer .foo>div:eq(1)").css("margin-top", "");
+        //     $(".footer .foo>div:eq(0)").text("生产地址：广东省东莞市万江区新城大道骏利工业园4栋");
+        //     $(".footer .foo>div:eq(1)").text("联系电话：0769-28686676");
+        //     $(".footer .foo>div:eq(1)").css("margin-top", "");
 
-            $(this).addClass("english");
-            $(this).attr("id", "");
-        });
+        //     $(this).addClass("english");
+        //     $(this).attr("id", "");
+        // });
     </script>
 </body>
 
