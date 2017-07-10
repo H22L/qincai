@@ -192,85 +192,11 @@
     </div>
     <script type="text/javascript">
         //导航栏效果
-        $(".menu li:not(:eq(1),:last)").hover(function() {
+        $(".menu li:not(:eq(2),:last)").hover(function() {
             $(this).addClass('menu_active')
         }, function() {
             $(this).removeClass('menu_active')
         });
-
-        $(".company").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".divtable").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".divtable").css("display", "block");
-        });
-        $(".outdoor").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".outdoor:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".outdoor:eq(1)").css("display", "block");
-        });
-        $(".uv").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".uv:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".uv:eq(1)").css("display", "block");
-        });
-        $(".liguanuv").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".liguanuv:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".liguanuv:eq(1)").css("display", "block");
-        });
-        $(".printing").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".printing:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".printing:eq(1)").css("display", "block");
-        });
-        $(".leather").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".leather:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".leather:eq(1)").css("display", "block");
-        });
-        $(".softfilm").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".softfilm:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".softfilm:eq(1)").css("display", "block");
-        });
-        $(".crystal").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".crystal:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".crystal:eq(1)").css("display", "block");
-        });
-        $(".5d").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".5d:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".5d:eq(1)").css("display", "block");
-        });
-        $(".intelligent").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".intelligent:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".intelligent:eq(1)").css("display", "block");
-        });
-        $(".film").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".film:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".film:eq(1)").css("display", "block");
-        });
-        $(".jingcai").on("click", function() {
-            $(".row ul li").attr("id", "");
-            $(".jingcai:eq(1)").siblings().css("display", "none");
-            $(this).attr("id", "active");
-            $(".jingcai:eq(1)").css("display", "block");
-        });
-
 
         //产品展示效果
         $(".img").hover(function() {
