@@ -114,7 +114,7 @@
                 <div class="pro_img uv">
                     <div style="width:100%;height:100%;margin-top:30px">
                         <div class="img">
-                            <img src="./assets/images/products/uv/JC-3200G.jpg" alt="">
+                            <a href="./product_param7.html"><img src="./assets/images/products/uv/JC-3200G.jpg" alt=""></a>
                             <div>
                                 JC-3200G
                             </div>
@@ -148,7 +148,7 @@
         //产品展示效果
         $(".img").hover(function() {
             console.log(123);
-            var img_width = $(this).children("img").width();
+            var img_width = $(this).children().children("img").width();
             $(this).children("div").width(img_width);
             $(this).children("div").css('display', 'block');
         }, function() {

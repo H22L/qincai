@@ -77,20 +77,24 @@
                     </a>
                 </div>
                 <div class="pro_img row">
+
                     <div class="col-xs-4 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/outdoor/JC-1700S.jpg" alt="">
+                        <a href="./product_param1.html">
+                            <img src="./assets/images/products/outdoor/JC-1700S.jpg" alt="">
+                        </a>
                         <div>
                             JC-1700S
                         </div>
                     </div>
+
                     <div class="col-xs-4 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/outdoor/JC-2000SD.jpg" alt="">
+                        <a href="./product_param2.html"><img src="./assets/images/products/outdoor/JC-2000SD.jpg" alt=""></a>
                         <div>
                             JC-2000SD
                         </div>
                     </div>
                     <div class="col-xs-4 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/outdoor/JC-3200D.jpg" alt="">
+                        <a href="./product_param3.html"><img src="./assets/images/products/outdoor/JC-3200D.jpg" alt=""></a>
                         <div>
                             JC-3200D
                         </div>
@@ -109,19 +113,19 @@
                 </div>
                 <div class="pro_img row">
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/epson/JC-1700UV.jpg" alt="">
+                        <a href="./product_param4.html"><img src="./assets/images/products/epson/JC-1700UV.jpg" alt=""></a>
                         <div>
                             JC-1700UV
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/epson/JC-2000UV.jpg" alt="">
+                        <a href="./product_param5.html"><img src="./assets/images/products/epson/JC-2000UV.jpg" alt=""></a>
                         <div>
                             JC-2000UV
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/epson/JC-3200UV.jpg" alt="">
+                        <a href="./product_param6.html"><img src="./assets/images/products/epson/JC-3200UV.jpg" alt=""></a>
                         <div>
                             JC-3200UV
                         </div>
@@ -140,19 +144,19 @@
                 </div>
                 <div class="pro_img row">
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/uv/JC-3200G.jpg" alt="">
+                        <a href="./product_param7.html"><img src="./assets/images/products/uv/JC-3200G.jpg" alt=""></a>
                         <div>
                             JC-3200G
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/uv/JC-3200G.jpg" alt="">
+                        <a href="./product_param7.html"><img src="./assets/images/products/uv/JC-3200G.jpg" alt=""></a>
                         <div>
                             JC-3200G
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/uv/JC-3200G.jpg" alt="">
+                        <a href="./product_param7.html"><img src="./assets/images/products/uv/JC-3200G.jpg" alt=""></a>
                         <div>
                             JC-3200G
                         </div>
@@ -171,19 +175,19 @@
                 </div>
                 <div class="pro_img row">
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/liguan/JC-2513.jpg" alt="">
+                        <a href="./product_param8.html"><img src="./assets/images/products/liguan/JC-2513.jpg" alt=""></a>
                         <div>
                             JC-2513
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/liguan/JC-2513.jpg" alt="">
+                        <a href="./product_param8.html"><img src="./assets/images/products/liguan/JC-2513.jpg" alt=""></a>
                         <div>
                             JC-2513
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4" style="position:relative">
-                        <img src="./assets/images/products/liguan/JC-2513.jpg" alt="">
+                        <a href="./product_param8.html"><img src="./assets/images/products/liguan/JC-2513.jpg" alt=""></a>
                         <div>
                             JC-2513
                         </div>
@@ -219,7 +223,7 @@
 
         //产品展示效果
         $(".pro_img>div").hover(function() {
-            var img_width = $(this).children("img").width();
+            var img_width = $(this).children().children("img").width();
             $(this).children("div").width(img_width);
             $(this).children("div").css('display', 'block');
         }, function() {
