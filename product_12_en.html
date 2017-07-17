@@ -113,7 +113,50 @@
                 </ul>
             </div>
             <div class="col-xs-9 col-md-8">
-                <div class="pro_img jingcai"> </div>
+                <div class="pro_img jingcai">
+                    <div style="width:100%;height:100%;margin-top:30px">
+                        <div class="img" style="margin-right:40px;margin-top:30px">
+                            <a href="./product_param1.html"><img src="./assets/images/products/haocai/爱普生环保型UV墨水.png" alt=""></a>
+                            <div>
+                                Epson UV curble ink ink& cleaning liquid
+                            </div>
+                        </div>
+                        <div class="img" style="margin-top:30px">
+                            <a href="./product_param2.html"><img src="./assets/images/products/haocai/理光系软墨 硬墨环保型.png" alt=""></a>
+                            <div>
+                                Rigid ink & flexible UV curble ink for Ricoh head
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:100%;height:100%;margin-top:30px">
+                        <div class="img" style="margin-right:40px;margin-top:30px">
+                            <a href="./product_param1.html"><img src="./assets/images/products/haocai/热升华 热转印系列墨水.png" alt=""></a>
+                            <div>
+                                Sublimation ink
+                            </div>
+                        </div>
+                        <div class="img" style="margin-top:30px">
+                            <a href="./product_param2.html"><img src="./assets/images/products/haocai/弱溶剂墨水.png" alt=""></a>
+                            <div>
+                                Eco solvent ink
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:100%;height:100%;margin-top:30px">
+                        <div class="img" style="margin-right:40px;margin-top:30px">
+                            <a href="./product_param1.html"><img src="./assets/images/products/haocai/弱溶剂清洗液.png" alt=""></a>
+                            <div>
+                                Cleaning liquid for eco solvent ink
+                            </div>
+                        </div>
+                        <div class="img" style="margin-top:30px">
+                            <a href="./product_param2.html"><img src="./assets/images/products/haocai/其他.png" alt=""></a>
+                            <div>
+                                others
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -141,7 +184,7 @@
         //产品展示效果
         $(".img").hover(function() {
             console.log(123);
-            var img_width = $(this).children("img").width();
+            var img_width = $(this).children().children("img").width();
             $(this).children("div").width(img_width);
             $(this).children("div").css('display', 'block');
         }, function() {
