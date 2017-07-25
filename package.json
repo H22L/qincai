@@ -1,0 +1,22 @@
+{
+  "name": "qincai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TightenPreacher/qincai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TightenPreacher/qincai/issues"
+  },
+  "homepage": "https://github.com/TightenPreacher/qincai#readme",
+  "dependencies": {
+    "mockjs": "^1.0.1-beta3"
+  }
+}

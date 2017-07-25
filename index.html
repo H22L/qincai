@@ -218,7 +218,8 @@
             </div>
         </div>
     </div>
-
+    <script src="./node_modules/mockjs/dist/mock-min.js"></script>
+    <script src="./mock.js"></script>
     <script type="text/javascript">
         //导航栏效果
         $(".menu li:not(:first,:last)").hover(function() {
@@ -235,6 +236,12 @@
         }, function() {
             $(this).children("div").css('display', 'none');
         });
+
+        $.ajax({
+            url: '打印机型',
+        }).done(function(data, status, xhr) {
+            console.log(JSON.parse(data))
+        })
     </script>
 </body>
 
